@@ -4,82 +4,51 @@
 created by Reaktor Innovations and University of Helsinki. 
 Copy the template, paste it to your GitHub README and edit! -->
 
-# Project Title
+# Translate Movie AI (course project)
 
-Final project for the Building AI course
-Translate AI course project
+The final project for the Building AI course that should help to determine idea of movie (anime, cartoons) translation to some specific language. It's quite a common problem to find translation (voice or even subtitles) to the movie to some of the small speech communities language like belarusian or latvian language. And even though I know several common speaking languages sometimes I want to see the movie I like with my native language. Or watch some rare movie with my children for whom it's hard to read so fast. I guess this is the common problem all over the world.
+
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+My project should at least define some steps to automatizate the movie translation process. And then it should help implement (I hope) some instruments to do that process. 
 
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+Good translation need a lot of time and human resources to accomplish the goal. I know that AI may help to simplify or even replace some of the people (ideally). Time to time I do translation by myself using various tools (editing small portions of subtitles). The last time I did the translation of the movie I used some of the free AI translation web sites and even with its limitations the result was excellent. So my next idea was - is it possible to do the same thing for other movies with different languages. 
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+When I become more familiar with the present AI capabilities I wrote down a few problems that may help to implement my idea now or in the near future:
+* Get the text representation of the dialogs (subtitles) with some extra information: voice, intonation, volume, etc (a lot of movies has subtitles that can be used as basis);
+* Do translation to the selected language, the result (subtitles) can be used already as alternative translation;
+* Voice the text representation with the right intonation, etc - it is possible now for some languages.
 
-
-## How is it used?
-
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
-
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
-
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
+Some related problems that comes from the above:
+* Voice recognition which is not ideal for such a project now;
+* Voice adjusment - now there are several types of human voices available.
 
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
+The start point may be the existing original subtitles and the subtitles with translation. There is a huge database of such kind of subtitles but they have very different quality.
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+AI methods that may help: voice recognition, deep fakes (to imitate voice).
+
+
+## How is it used?
+There is no process defined.
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+The main limitation here is the author rights.
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+ChatGPT mostly cover all the AI methods that this project requires. But there are another AI developers that provide similar tools. Before starting the project there need an investigation in this field.
 
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+* [Gentle Dragon - non-comercial translation platform](https://la-cmok.me/)
 
 # License
 This project is licensed under the terms of the MIT license.
